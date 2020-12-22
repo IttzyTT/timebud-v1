@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  --color: #8ee3f6;
+  --size: 1rem;
+  --borderRadius: calc(var(--size) * 0.5);
+  background: #081221;
+  color: whitesmoke;
+}
+/* Main och timer divs */
+#main-container {
+  margin: auto;
+  width: 490px;
+}
+.left {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 7px;
+  margin-left: 5px;
+}
+.right {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+.timerContainer {
+  border-bottom: 1px solid #8ee3f6;
+  margin-top: 50px;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+label {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color);
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* ------------------------------------------- */
+
+/* Main clock */
+.clock {
+  color: #48dafb;
+  font-size: 55px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 7px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #8ee3f6;
+}
+
+/* ------------------------------------------- */
+
+/* Start Time */
+.clockStart {
+  color: #40f96b;
+  font-size: 40px;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 7px;
+  margin-left: 20px;
+}
+
+#timePick {
+  border: var(--border) solid var(--color);
+  border-radius: 5px;
+  color: #222;
+  font-size: 16px;
+  height: 30px;
+  padding-left: 5px;
+  margin-left: 3px;
+}
+
+/* ------------------------------------------- */
+
+/* Break time */
+#breakTimeInput {
+  font-size: 16px;
+  margin-right: 5px;
+  margin-left: 3px;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  border: var(--border) solid var(--color);
+  border-radius: var(--borderRadius);
+}
+
+#cta-paus,
+.cta-Btn {
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 80px;
+  text-align: center;
+  background-color: rgb(68, 153, 143);
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+#cta-paus:hover {
+  background-color: #1ed0d3;
+}
+
+/* ------------------------------------------- */
+
+.clockDown {
+  color: #f96840;
+  font-size: 40px;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 7px;
+  margin-left: 20px;
+}
+
+/* Add timers */
+.title {
+  color: #48dafb;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 7px;
+  margin-top: 20px;
+  margin-bottom: 1px;
+}
+li {
+  list-style: none;
+}
+#timers {
+  border-bottom: 1px solid #8ee3f6;
+}
+.timerdiv {
+  display: flex;
+  justify-content: center;
+}
+
+.listTitle {
+  width: 100px;
+  text-align: center;
+  margin-right: 5px;
+  height: 24px;
+  border: var(--border) solid var(--color);
+  border-radius: 0px 5px 5px 0px;
+}
+.timePickList {
+  border: var(--border) solid var(--color);
+  border-radius: 5px 0px 0px 5px;
+  color: #222;
+  font-size: 12px;
+  height: 24px;
+  border-right: 1px solid gray;
+  padding-left: 5px;
+}
+.listTimer {
+  color: #f3f940;
+  font-size: 25px;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 4px;
+  margin-left: 20px;
+}
+.ctaButtonsDiv {
+  padding-top: 2px;
+}
+#cta-Start {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  text-align: center;
+  background-color: rgb(74, 153, 68);
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+#cta-add {
+  margin-top: 5px;
+  width: 90px;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  text-align: center;
+  background-color: #fbc443e9;
+  color: whitesmoke;
+  cursor: pointer;
+}
+#cta-clear {
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 80px;
+  text-align: center;
+  background-color: rgb(153, 79, 68);
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+#cta-Del {
+  font-size: 22px;
+  border: none;
+  margin-left: 10px;
+  padding-bottom: 1px;
+  background: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
