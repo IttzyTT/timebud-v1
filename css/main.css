@@ -109,8 +109,6 @@ label {
   background-color: #1ed0d3;
 }
 
-/* ------------------------------------------- */
-
 .clockDown {
   color: #f96840;
   font-size: 40px;
@@ -118,6 +116,8 @@ label {
   letter-spacing: 7px;
   margin-left: 20px;
 }
+
+/* ------------------------------------------- */
 
 /* Add timers */
 .title {
@@ -211,4 +211,55 @@ li {
   background: none;
   color: whitesmoke;
   cursor: pointer;
+}
+
+/* ------------------------------------------- */
+
+/* Mobile */
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  #main-container {
+    margin: auto;
+    width: 95vw;
+  }
+  .clock {
+    font-size: 36px;
+  }
+
+  /* Start Time */
+  .clockStart {
+    font-size: 25px;
+  }
+
+  #timePick {
+    font-size: 12px;
+    height: 20px;
+  }
+  /* ------------------------------------------- */
+
+  /* Break time */
+  .clockDown {
+    font-size: 27px;
+  }
+
+  #breakTimeInput {
+    font-size: 12px;
+    width: 30px;
+    height: 23px;
+  }
+
+  #cta-paus,
+  .cta-Btn {
+    height: 23px;
+    width: 80px;
+  }
+
+  #cta-paus:hover {
+    background-color: #1ed0d3;
+  }
+
+  /* ------------------------------------------- */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 }
