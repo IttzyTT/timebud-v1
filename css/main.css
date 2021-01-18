@@ -1,4 +1,5 @@
 body {
+  height: 100vh;
   background: rgb(160, 96, 169) url(../img/bg.jpg) center/cover;
   font-size: 12px;
 }
@@ -219,7 +220,8 @@ li {
 
 /* Mobile */
 
-@media only screen and (max-width: 375px) {
+/* 2688x1242px at 458ppi */
+@media only screen and (device-width: 414px) and (device-height: 896px) {
   #main-container {
     margin: auto;
     width: 95vw;
@@ -235,6 +237,41 @@ li {
   }
 
   /* Start Time */
+  .clockStart,
+  .clockDown {
+    font-size: 2.3rem;
+  }
+
+  #timePick,
+  #breakTimeInput {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.6rem;
+  }
+  ::placeholder {
+  }
+
+  #cta-paus,
+  .cta-Btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #main-container {
+    margin: auto;
+    width: 95vw;
+    margin-top: 0.7rem;
+  }
+
+  label {
+    font-size: 1.4rem;
+  }
+  .clock {
+    font-size: 3.3rem;
+    padding: 1rem;
+  }
+
   .clockStart,
   .clockDown {
     font-size: 2.3rem;
