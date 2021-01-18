@@ -1,6 +1,5 @@
 body {
-  background: rgb(160, 96, 169) url(bg.png) center/cover;
-  color: whitesmoke;
+  background: rgb(160, 96, 169) url(../img/bg.jpg) center/cover;
   font-size: 12px;
 }
 /* Main och timer divs */
