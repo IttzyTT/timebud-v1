@@ -219,7 +219,7 @@ li {
 
 /* Mobile */
 
-@media only screen and (min-width: 200px) and (max-width: 767px) {
+@media only screen and (max-width: 375px) {
   #main-container {
     margin: auto;
     width: 95vw;
@@ -253,9 +253,4 @@ li {
     font-size: 1.2rem;
     padding: 0.5rem 0.6rem;
   }
-
-  /* ------------------------------------------- */
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
 }
