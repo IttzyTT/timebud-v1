@@ -1,119 +1,122 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body,
-html {
-  --color: #8ee3f6;
-  --size: 1rem;
-  --borderRadius: calc(var(--size) * 0.5);
-  background: #081221;
+body {
+  background: rgb(160, 96, 169) url(/bg.png) center/cover;
   color: whitesmoke;
+  font-size: 12px;
 }
 /* Main och timer divs */
 #main-container {
   margin: auto;
-  width: 490px;
+  width: 40em;
+  height: 40em;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.1)
+  );
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaaaaa,
+    1px 1px 2px #555555;
+  backdrop-filter: blur(0.8rem);
+  border-radius: 1rem;
+  margin-top: 4rem;
 }
-.left {
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 7px;
-  margin-left: 5px;
-}
-.right {
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 3px;
-  margin-right: 5px;
-}
+
 .timerContainer {
-  border-bottom: 1px solid #8ee3f6;
-  margin-top: 50px;
-  height: 50px;
+  border-bottom: 1px solid #f2f2f299;
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  margin-top: 2rem;
+  padding: 0 0.5rem;
 }
+
 label {
   font-family: 'Roboto', sans-serif;
-  color: var(--color);
-  font-size: 18px;
-  font-weight: bold;
-  margin-right: 5px;
+  color: #162948e2;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
 }
 
 /* ------------------------------------------- */
 
 /* Main clock */
 .clock {
-  color: #48dafb;
-  font-size: 55px;
+  color: #25447be2;
+  font-size: 4rem;
   text-align: center;
   font-family: 'Orbitron', sans-serif;
-  letter-spacing: 7px;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  border-bottom: 1px solid #8ee3f6;
+  letter-spacing: 0.25rem;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(0.8rem);
+  border-radius: 1rem 1rem 0rem 0rem;
 }
 
 /* ------------------------------------------- */
 
 /* Start Time */
-.clockStart {
-  color: #40f96b;
-  font-size: 40px;
-  font-family: 'Orbitron', sans-serif;
-  letter-spacing: 7px;
-  margin-left: 20px;
+#timePick {
+  border-radius: 0.5rem;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7e2;
+  color: #324c7f;
+  font-size: 1.5rem;
+  padding: 0.2rem 0.5rem;
 }
 
-#timePick {
-  border: var(--border) solid var(--color);
-  border-radius: 5px;
-  color: #222;
-  font-size: 16px;
-  height: 30px;
-  padding-left: 5px;
-  margin-left: 3px;
+.clockStart {
+  color: #37fe21cb;
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.25rem;
 }
 
 /* ------------------------------------------- */
 
 /* Break time */
 #breakTimeInput {
-  font-size: 16px;
-  margin-right: 5px;
-  margin-left: 3px;
-  width: 40px;
-  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7e2;
+  color: #324c7f;
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
   text-align: center;
-  border: var(--border) solid var(--color);
-  border-radius: var(--borderRadius);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  width: 3rem;
+}
+::placeholder {
+  color: #10394a95;
 }
 
 #cta-paus,
 .cta-Btn {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  padding: 0.3rem 1rem;
   border: none;
-  border-radius: 5px;
-  height: 30px;
-  width: 80px;
+  border-radius: 1rem;
   text-align: center;
-  background-color: rgb(68, 153, 143);
-  color: whitesmoke;
+  background-color: #a1205ae2;
+  color: #d9edf6;
   cursor: pointer;
 }
 
 #cta-paus:hover {
-  background-color: #1ed0d3;
+  background-color: #d74788e2;
 }
 
 .clockDown {
-  color: #f96840;
-  font-size: 40px;
+  color: #e83f30d6;
+  font-size: 3rem;
   font-family: 'Orbitron', sans-serif;
-  letter-spacing: 7px;
+  letter-spacing: 0.25rem;
   margin-left: 20px;
 }
 
@@ -221,41 +224,35 @@ li {
   #main-container {
     margin: auto;
     width: 95vw;
+    margin-top: 0.7rem;
+  }
+
+  label {
+    font-size: 1.4rem;
   }
   .clock {
-    font-size: 36px;
+    font-size: 3.3rem;
+    padding: 1rem;
   }
 
   /* Start Time */
-  .clockStart {
-    font-size: 25px;
-  }
-
-  #timePick {
-    font-size: 12px;
-    height: 20px;
-  }
-  /* ------------------------------------------- */
-
-  /* Break time */
+  .clockStart,
   .clockDown {
-    font-size: 27px;
+    font-size: 2.3rem;
   }
 
+  #timePick,
   #breakTimeInput {
-    font-size: 12px;
-    width: 30px;
-    height: 23px;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.6rem;
+  }
+  ::placeholder {
   }
 
   #cta-paus,
   .cta-Btn {
-    height: 23px;
-    width: 80px;
-  }
-
-  #cta-paus:hover {
-    background-color: #1ed0d3;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.6rem;
   }
 
   /* ------------------------------------------- */
